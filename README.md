@@ -154,7 +154,7 @@ The FastAPI backend serves the TensorFlow Lite classification model and keeps tr
    ```xml
    <meta-data
        android:name="com.google.android.geo.API_KEY"
-       android:value="YOUR_GOOGLE_MAPS_API_KEY" />
+       android:value="API_KEY" />
    ```
 5. Update the backend connection URL in `HomeActivity.java` and `ResultActivity.java`:
    ```java

@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">EcoSafe AI</string>
+    <string name="risk_analysis_title">Risk Analysis</string>
+    <string name="risk_bg_desc">Forest background</string>
+    <string name="back">Back</string>
+    <string name="forest_guide">Forest guide</string>
+    <string name="stat_total">Total scans</string>
+    <string name="stat_fire">Fire alerts</string>
+    <string name="stat_safe">Safe scans</string>
+    <string name="stat_7d_fire">7-day fires</string>
+    <string name="chart_fire_safe">Fire vs safe distribution</string>
+    <string name="chart_weekly">Last 7 days activity</string>
+    <string name="chart_confidence">Detection confidence trend</string>
+    <string name="chart_location_map">Geographic fire hotspots</string>
+    <string name="chart_location_zones">Fire incidents by zone</string>
+    <string name="stat_geo_tagged">%1$d geo-tagged</string>
+    <string name="risk_footer_note">Analytics are computed from incidents stored on this device.</string>
+    <string name="nav_risk">Risk</string>
+</resources>

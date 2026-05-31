@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:paddingTop="6dp"
+    android:paddingBottom="6dp">
+
+    <View
+        android:id="@+id/view_hotspot_dot"
+        android:layout_width="8dp"
+        android:layout_height="8dp"
+        android:background="@drawable/risk_badge_high" />
+
+    <TextView
+        android:id="@+id/tv_hotspot_label"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_weight="1"
+        android:textColor="@color/pastel_text_primary"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/tv_hotspot_counts"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/pastel_orange"
+        android:textSize="11sp"
+        android:textStyle="bold" />
+</LinearLayout>

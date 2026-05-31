@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Background Circle -->
+    <item>
+        <shape>
+            <solid android:color="#33FFFFFF" />
+            <corners android:radius="45dp" />
+        </shape>
+    </item>
+
+    <!-- Progress Circle (Dynamic) -->
+    <item>
+        <rotate
+            android:fromDegrees="270"
+            android:toDegrees="270">
+            <shape>
+                <solid android:color="#00000000" />
+                <stroke
+                    android:width="6dp"
+                    android:color="#D4A373" />
+                <corners android:radius="45dp" />
+            </shape>
+        </rotate>
+    </item>
+</layer-list>

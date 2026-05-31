@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy — EcoSafe-AI</title>
+    <style>
+        :root {
+            --green-dark: #1b4332;
+            --green-mid: #2d6a4f;
+            --green-light: #40916c;
+            --orange-fire: #e85d04;
+            --orange-soft: #ffba08;
+            --bg: #f0f7f4;
+            --card: #ffffff;
+            --text: #1a1a2e;
+            --muted: #5c677d;
+            --border: #d8ece3;
+            --shadow: 0 12px 40px rgba(27, 67, 50, 0.12);
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: "Segoe UI", system-ui, -apple-system, sans-serif;
+            background: linear-gradient(160deg, #e8f5e9 0%, var(--bg) 40%, #fff8f0 100%);
+            color: var(--text);
+            line-height: 1.7;
+            min-height: 100vh;
+        }
+
+        .hero {
+            background: linear-gradient(145deg, #eef7f0 0%, #dcefe3 35%, #d4ebe8 70%, #e8f4fa 100%);
+            color: #2d6a4f;
+            padding: 3.5rem 1.5rem 2.75rem;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+            margin-bottom: 0;
+        }
+
+        .hero::before {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background:
+                radial-gradient(circle at 18% 25%, rgba(178, 223, 219, 0.45) 0%, transparent 50%),
+                radial-gradient(circle at 82% 75%, rgba(200, 230, 201, 0.4) 0%, transparent 45%);
+            pointer-events: none;
+        }
+
+        .hero-inner {
+            position: relative;
+            max-width: 820px;
+            margin: 0 auto;
+        }
+
+        .badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            background: rgba(255, 255, 255, 0.82);
+            border: 1px solid rgba(45, 106, 79, 0.18);
+            border-radius: 999px;
+            padding: 0.4rem 1rem;
+            font-size: 0.85rem;
+            letter-spacing: 0.04em;
+            text-transform: uppercase;
+            margin-bottom: 1.25rem;
+            color: var(--green-mid);
+        }
+
+        .badge-dot {
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background: #81c784;
+            box-shadow: 0 0 8px rgba(129, 199, 132, 0.55);
+        }
+
+        h1 {
+            font-size: clamp(2rem, 5vw, 2.75rem);
+            font-weight: 800;
+            letter-spacing: -0.02em;
+            margin-bottom: 0.75rem;
+        }
+
+        .hero p {
+            font-size: 1.08rem;
+            color: #4a6358;
+            max-width: 620px;
+            margin: 0 auto;
+        }
+
+        .updated {
+            margin-top: 1.25rem;
+            font-size: 0.9rem;
+            color: #6b7c72;
+        }
+
+        .container {
+            max-width: 860px;
+            margin: 2.75rem auto 3rem;
+            padding: 0 1.25rem;
+        }
+
+        .card {
+            background: var(--card);
+            border: 1px solid var(--border);
+            border-radius: 18px;
+            box-shadow: var(--shadow);
+            padding: 2rem 2.25rem;
+            margin-bottom: 1.25rem;
+        }
+
+        .card h2 {
+            color: var(--green-dark);
+            font-size: 1.35rem;
+            margin-bottom: 0.85rem;
+            display: flex;
+            align-items: center;
+            gap: 0.6rem;
+        }
+
+        .card h2 span {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 2rem;
+            height: 2rem;
+            border-radius: 10px;
+            background: linear-gradient(135deg, var(--green-light), var(--green-mid));
+            color: #fff;
+            font-size: 0.95rem;
+            flex-shrink: 0;
+        }
+
+        .card p, .card li {
+            color: var(--muted);
+            font-size: 0.98rem;
+        }
+
+        .card ul {
+            margin: 0.75rem 0 0 1.25rem;
+        }
+
+        .card li {
+            margin-bottom: 0.45rem;
+        }
+
+        .highlight-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+
+        .highlight-item {
+            background: #f7fbf9;
+            border: 1px solid var(--border);
+            border-radius: 14px;
+            padding: 1rem 1.1rem;
+        }
+
+        .highlight-item strong {
+            display: block;
+            color: var(--green-dark);
+            margin-bottom: 0.35rem;
+            font-size: 0.95rem;
+        }
+
+        .highlight-item span {
+            color: var(--muted);
+            font-size: 0.88rem;
+        }
+
+        .data-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 1rem;
+            font-size: 0.92rem;
+        }
+
+        .data-table th,
+        .data-table td {
+            border: 1px solid var(--border);
+            padding: 0.75rem 0.85rem;
+            text-align: left;
+        }
+
+        .data-table th {
+            background: #edf7f1;
+            color: var(--green-dark);
+            font-weight: 600;
+        }
+
+        .data-table td {
+            color: var(--muted);
+        }
+
+        .contact-box {
+            background: linear-gradient(135deg, #edf7f1, #fff);
+            border: 1px solid var(--border);
+            border-radius: 14px;
+            padding: 1.25rem 1.5rem;
+            margin-top: 1rem;
+        }
+
+        .contact-box a {
+            color: var(--green-mid);
+            font-weight: 600;
+            text-decoration: none;
+        }
+
+        .contact-box a:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem 1rem 2.5rem;
+            color: var(--muted);
+            font-size: 0.88rem;
+        }
+
+        footer strong {
+            color: var(--green-dark);
+        }
+
+        @media (max-width: 600px) {
+            .card {
+                padding: 1.35rem 1.25rem;
+            }
+
+            .data-table {
+                font-size: 0.82rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="hero">
+        <div class="hero-inner">
+            <div class="badge">
+                <span class="badge-dot"></span>
+                EcoSafe-AI Forest Fire Detection
+            </div>
+            <h1>Privacy Policy</h1>
+            <p>
+                Your privacy matters. This policy explains how the EcoSafe-AI mobile app and
+                backend API collect, use, store, and protect your information.
+            </p>
+            <p class="updated">Last updated: May 30, 2026 &nbsp;·&nbsp; Version 1.0</p>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="card">
+            <h2><span>1</span> Introduction</h2>
+            <p>
+                EcoSafe-AI ("we", "our", "the App") is a forest fire detection application that
+                uses your device camera and location services to analyze images and report potential
+                fire incidents. By using EcoSafe-AI, you agree to the practices described in this
+                Privacy Policy.
+            </p>
+            <div class="highlight-grid">
+                <div class="highlight-item">
+                    <strong>App Purpose</strong>
+                    <span>Early forest fire detection and emergency reporting</span>
+                </div>
+                <div class="highlight-item">
+                    <strong>Platform</strong>
+                    <span>Android mobile app + EcoSafe-AI backend API</span>
+                </div>
+                <div class="highlight-item">
+                    <strong>Data Controller</strong>
+                    <span>EcoSafe-AI Project Team</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="card">
+            <h2><span>2</span> Information We Collect</h2>
+            <p>We collect only the data necessary to provide fire detection and incident reporting:</p>
+            <table class="data-table">
+                <thead>
+                    <tr>
+                        <th>Data Type</th>
+                        <th>How It Is Collected</th>
+                        <th>Purpose</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Camera Images</strong></td>
+                        <td>When you capture or upload a photo for analysis</td>
+                        <td>AI-based fire detection</td>
+                    </tr>
+                    <tr>
+                        <td><strong>GPS Location</strong></td>
+                        <td>Device location services (with your permission)</td>
+                        <td>Pinpoint fire incident location on map</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Detection Results</strong></td>
+                        <td>Generated by the AI model after image analysis</td>
+                        <td>Display results, history, and alerts</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Timestamps</strong></td>
+                        <td>Automatically recorded at detection time</td>
+                        <td>Incident history and filtering</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Device Identifier</strong></td>
+                        <td>Generic user ID ("android_user") sent with requests</td>
+                        <td>Associate reports with app sessions</td>
+                    </tr>
+                </tbody>
+            </table>
+            <p style="margin-top: 1rem;">
+                We do <strong>not</strong> require account registration, email, phone number, or
+                personal identity information to use the core features of the app.
+            </p>
+        </section>
+
+        <section class="card">
+            <h2><span>3</span> How We Use Your Information</h2>
+            <ul>
+                <li>Process images through our TensorFlow Lite fire detection model</li>
+                <li>Store fire incident records with location and confidence scores</li>
+                <li>Display detection history and map locations within the app</li>
+                <li>Enable emergency contact and location sharing features you initiate</li>
+                <li>Improve reliability of the detection and reporting system</li>
+            </ul>
+        </section>
+
+        <section class="card">
+            <h2><span>4</span> Data Storage &amp; Retention</h2>
+            <p>Your data may be stored in the following locations:</p>
+            <ul>
+                <li><strong>On your device:</strong> Detection history is saved locally in an SQLite database (<code>incidents.db</code>) including image paths, coordinates, and results.</li>
+                <li><strong>On the backend server:</strong> Fire incidents and safe detection reports are stored in the EcoSafe-AI server database when the app is connected to the network.</li>
+            </ul>
+            <p style="margin-top: 0.75rem;">
+                You can delete local history from the History screen in the app. Backend records
+                are retained for operational and safety purposes unless deleted by an administrator.
+            </p>
+        </section>
+
+        <section class="card">
+            <h2><span>5</span> Permissions Required</h2>
+            <p>The Android app requests the following permissions:</p>
+            <ul>
+                <li><strong>Camera:</strong> to capture forest area photos for analysis</li>
+                <li><strong>Location (Fine &amp; Coarse):</strong> to attach GPS coordinates to reports</li>
+                <li><strong>Internet:</strong> to communicate with the EcoSafe-AI backend API</li>
+                <li><strong>Storage:</strong> to select images from your gallery</li>
+                <li><strong>Phone (Dial):</strong> to initiate emergency calls (1122, 1084, 15) when you tap emergency buttons; the app does not make calls automatically</li>
+            </ul>
+            <p style="margin-top: 0.75rem;">
+                You may deny location permission and still use detection, but incident coordinates
+                may be unavailable or less accurate.
+            </p>
+        </section>
+
+        <section class="card">
+            <h2><span>6</span> Third-Party Services</h2>
+            <p>EcoSafe-AI integrates with the following third-party services:</p>
+            <ul>
+                <li><strong>Google Maps SDK:</strong> displays incident locations on a map. Google's Privacy Policy applies: <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">policies.google.com/privacy</a></li>
+                <li><strong>Google Play Services (Location):</strong> provides device GPS coordinates</li>
+            </ul>
+            <p style="margin-top: 0.75rem;">
+                We do not sell your personal data to third parties.
+            </p>
+        </section>
+
+        <section class="card">
+            <h2><span>7</span> Data Sharing</h2>
+            <p>We do not share your data except in these cases:</p>
+            <ul>
+                <li><strong>When you choose to share:</strong> The "Share Report" feature lets you manually send detection details via other apps (e.g., messaging apps).</li>
+                <li><strong>Emergency services:</strong> When you tap emergency call buttons, your phone's dialer opens we do not transmit data directly to authorities.</li>
+                <li><strong>Legal requirements:</strong> If required by applicable law or valid government request.</li>
+            </ul>
+        </section>
+
+        <section class="card">
+            <h2><span>8</span> Security</h2>
+            <p>
+                We take reasonable measures to protect your data, including local device storage
+                and server-side database access controls. However, no method of transmission over
+                a network is 100% secure. During development, the app may connect to a local
+                backend over HTTP for production deployment, HTTPS encryption is strongly
+                recommended.
+            </p>
+        </section>
+
+        <section class="card">
+            <h2><span>9</span> Your Rights &amp; Choices</h2>
+            <ul>
+                <li><strong>Revoke permissions:</strong> Disable camera or location access in your device Settings at any time</li>
+                <li><strong>Delete local history:</strong> Use the Clear All or swipe-to-delete options in the History screen</li>
+                <li><strong>Opt out of location:</strong> Deny location permission; detection will still work without GPS</li>
+                <li><strong>Request data deletion:</strong> Contact us to request removal of backend-stored incident records</li>
+            </ul>
+        </section>
+
+        <section class="card">
+            <h2><span>10</span> Children's Privacy</h2>
+            <p>
+                EcoSafe-AI is not directed at children under 13. We do not knowingly collect
+                personal information from children. If you believe a child has provided us data,
+                please contact us and we will delete it promptly.
+            </p>
+        </section>
+
+        <section class="card">
+            <h2><span>11</span> Changes to This Policy</h2>
+            <p>
+                We may update this Privacy Policy from time to time. Changes will be reflected
+                on this page with an updated "Last updated" date. Continued use of the app after
+                changes constitutes acceptance of the revised policy.
+            </p>
+        </section>
+
+        <section class="card">
+            <h2><span>12</span> Contact Us</h2>
+            <p>If you have questions, concerns, or data deletion requests regarding this Privacy Policy:</p>
+            <div class="contact-box">
+                <p><strong>EcoSafe-AI DEVELOPER</strong></p>
+                <p>Email: <a href="mailto:alina.insights@gmail.com">alina.insights@gmail.com</a></p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 <strong>EcoSafe-AI:</strong> Forest Fire Detection System</p>
+        <p style="margin-top: 0.35rem;">Protecting forests through intelligent early detection</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Legacy (risk screen may reference) -->
+    <color name="black">#FF1A1A2E</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="golden_accent">#D4A373</color>
+    <color name="fire_alert">#E85D04</color>
+    <color name="safe_green">#40916C</color>
+
+    <!-- Premium pastel palette (privacy-inspired) -->
+    <color name="pastel_bg_start">#E8F5E9</color>
+    <color name="pastel_bg_mid">#F0F7F4</color>
+    <color name="pastel_bg_end">#FFF8F0</color>
+
+    <color name="pastel_green_dark">#1B4332</color>
+    <color name="pastel_green">#2D6A4F</color>
+    <color name="pastel_green_light">#40916C</color>
+    <color name="pastel_green_soft">#D8ECE3</color>
+    <color name="pastel_green_mist">#EEF7F0</color>
+
+    <color name="pastel_orange">#E85D04</color>
+    <color name="pastel_orange_soft">#FFBA08</color>
+    <color name="pastel_orange_mist">#FFF0E0</color>
+    <color name="pastel_orange_pale">#FFE8D6</color>
+
+    <color name="pastel_teal">#4ECDC4</color>
+    <color name="pastel_teal_mist">#E0F5F3</color>
+
+    <color name="pastel_card">#FFFFFF</color>
+    <color name="pastel_card_stroke">#D8ECE3</color>
+    <color name="pastel_text_primary">#1A1A2E</color>
+    <color name="pastel_text_secondary">#5C677D</color>
+    <color name="pastel_text_muted">#8A9BA8</color>
+
+    <color name="pastel_danger">#E63946</color>
+    <color name="pastel_danger_mist">#FFE5E8</color>
+
+    <color name="pastel_nav_inactive">#8A9BA8</color>
+    <color name="pastel_nav_active">#2D6A4F</color>
+</resources>

@@ -173,7 +173,7 @@ View our official, host-published privacy policy:
 
 ---
 
-## 🔮 Future Enhancements
+## Future Enhancements
 - **Push Notification Alerts:** Implement Firebase Cloud Messaging (FCM) to instantly alert residents within a 5km radius of a verified forest fire.
 - **Deep Meteorological Risk Forecasting:** Integrate real-time weather APIs to factor wind speed, air humidity, and temperature into the local risk score calculations.
 - **Advanced Admin Management Portal:** Develop a web-based administration panel to view heatmaps, dispatch wildfire response units, and resolve reported incidents.
@@ -185,9 +185,9 @@ View our official, host-published privacy policy:
 * **Developer Name:** Alina Liaquat
 * **GitHub Profile:** [@precious-05](https://github.com/precious-05)
 * **Contact Email:** [alina.insights@gmail.com](mailto:alina.insights@gmail.com)
-* **Class / Semester:** *[Your Class / Semester, e.g., BS Computer Science - 6th Semester]*
-* **Department:** *[Your Department, e.g., Department of Computer Science]*
-* **LinkedIn Profile:** *[Link to Your LinkedIn Profile, if available]*
+* **Class & Semester:** *[BS Computer Science - 6th Semester]*
+* **Department:** *[Department of Computer Science]*
+* **LinkedIn Profile:** *[www.linkedin.com/in/alina-liaquat-779347325]*
 
 ---
-*EcoSafe AI - Protecting our forests, preserving our future.*
+*EcoSafe AI - Protecting our forests, preserving our future*

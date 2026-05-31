@@ -185,9 +185,9 @@ View our official, host-published privacy policy:
 * **Developer Name:** Alina Liaquat
 * **GitHub Profile:** [@precious-05](https://github.com/precious-05)
 * **Contact Email:** [alina.insights@gmail.com](mailto:alina.insights@gmail.com)
-* **Class & Semester:** *[BS Computer Science - 6th Semester]*
-* **Department:** *[Department of Computer Science]*
-* **LinkedIn Profile:** *[www.linkedin.com/in/alina-liaquat-779347325]*
+* **Class & Semester:** *BS Computer Science - 6th Semester*
+* **Department:** *Department of Computer Science*
+* **LinkedIn Profile:** *www.linkedin.com/in/alina-liaquat-779347325*
 
 ---
 *EcoSafe AI - Protecting our forests, preserving our future*

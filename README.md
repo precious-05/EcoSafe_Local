@@ -38,7 +38,7 @@ EcoSafe AI addresses the critical problem of rapid wildfire escalation through e
 
 ---
 
-## ✨ Key Features
+## Key Features
 
 ### 📸 1. Intelligent Real-Time Fire Scan
 * **CameraX Integration:** Capture live images directly within the app using a high-performance, low-latency camera interface, or select photos from your device gallery.

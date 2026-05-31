@@ -114,7 +114,7 @@ Build the APK using Android Studio and place it in the `apk/` directory to share
 
 ---
 
-## 🚀 How to Run the Project
+## How to Run the Project
 
 ### 🖥️ 1. Setting Up the FastAPI Backend Server
 The FastAPI backend serves the TensorFlow Lite classification model and keeps track of reported incidents.

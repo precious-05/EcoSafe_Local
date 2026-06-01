@@ -38,7 +38,7 @@ EcoSafe AI addresses the critical problem of rapid wildfire escalation through e
 
 ---
 
-## ✨ Key Features
+## Key Features
 
 ### 📸 1. Intelligent Real-Time Fire Scan
 * **CameraX Integration:** Capture live images directly within the app using a high-performance, low-latency camera interface, or select photos from your device gallery.
@@ -114,7 +114,7 @@ Build the APK using Android Studio and place it in the `apk/` directory to share
 
 ---
 
-## 🚀 How to Run the Project
+## How to Run the Project
 
 ### 🖥️ 1. Setting Up the FastAPI Backend Server
 The FastAPI backend serves the TensorFlow Lite classification model and keeps track of reported incidents.
@@ -154,7 +154,7 @@ The FastAPI backend serves the TensorFlow Lite classification model and keeps tr
    ```xml
    <meta-data
        android:name="com.google.android.geo.API_KEY"
-       android:value="YOUR_GOOGLE_MAPS_API_KEY" />
+       android:value="API_KEY" />
    ```
 5. Update the backend connection URL in `HomeActivity.java` and `ResultActivity.java`:
    ```java
@@ -173,7 +173,7 @@ View our official, host-published privacy policy:
 
 ---
 
-## 🔮 Future Enhancements
+## Future Enhancements
 - **Push Notification Alerts:** Implement Firebase Cloud Messaging (FCM) to instantly alert residents within a 5km radius of a verified forest fire.
 - **Deep Meteorological Risk Forecasting:** Integrate real-time weather APIs to factor wind speed, air humidity, and temperature into the local risk score calculations.
 - **Advanced Admin Management Portal:** Develop a web-based administration panel to view heatmaps, dispatch wildfire response units, and resolve reported incidents.
@@ -185,9 +185,9 @@ View our official, host-published privacy policy:
 * **Developer Name:** Alina Liaquat
 * **GitHub Profile:** [@precious-05](https://github.com/precious-05)
 * **Contact Email:** [alina.insights@gmail.com](mailto:alina.insights@gmail.com)
-* **Class / Semester:** *[Your Class / Semester, e.g., BS Computer Science - 6th Semester]*
-* **Department:** *[Your Department, e.g., Department of Computer Science]*
-* **LinkedIn Profile:** *[Link to Your LinkedIn Profile, if available]*
+* **Class & Semester:** *BS Computer Science - 6th Semester*
+* **Department:** *Department of Computer Science*
+* **LinkedIn Profile:** *www.linkedin.com/in/alina-liaquat-779347325*
 
 ---
-*EcoSafe AI - Protecting our forests, preserving our future.*
+*EcoSafe AI - Protecting our forests, preserving our future*

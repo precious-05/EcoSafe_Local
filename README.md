@@ -127,10 +127,10 @@ EcoSafe AI addresses the critical problem of rapid wildfire escalation through e
 
 ---
 
-## 📥 APK Download
-Build the APK using Android Studio and place it in the `apk/` directory to share it with your users!
+## APK Download
+The compiled debug APK is located in the build directory after compilation:
 
-👉 [**Download EcoSafe AI APK**](apk/EcoSafe_AI.apk)
+[Download EcoSafe AI Debug APK](file:///e:/EcoSafe_Local/EcoSafe%20AI/app/build/outputs/apk/debug/app-debug.apk)
 
 ---
 
@@ -170,7 +170,7 @@ The FastAPI backend serves the TensorFlow Lite classification model and keeps tr
    * Check health status: `http://localhost:8000/health`
 
 > [!NOTE]
-> Ensure that your computer and Android device are connected to the same Wi-Fi network. Note your computer's local IP address (e.g. `192.168.1.100`) and configure it in the Android application's `HomeActivity.java` and `ResultActivity.java` at the `BASE_URL` constant.
+> Ensure that your computer and Android device are connected to the same Wi-Fi network. You do not need to modify any Java files to set the IP address; the mobile application features a dynamic configuration screen where you can save your current server URL at runtime.
 
 ---
 
@@ -184,10 +184,7 @@ The FastAPI backend serves the TensorFlow Lite classification model and keeps tr
        android:name="com.google.android.geo.API_KEY"
        android:value="API_KEY" />
    ```
-5. Update the backend connection URL in `HomeActivity.java` and `ResultActivity.java`:
-   ```java
-   private static final String BASE_URL = "http://<YOUR_COMPUTER_IP_ADDRESS>:8000/";
-   ```
+5. Configure the Backend URL dynamically: You do not need to modify any Java source code. Simply install the APK, tap the Settings (Gear) icon in the top-right corner of the application's Home Screen, enter your computer's local IP address (for example, 192.168.1.100:8000), and tap Save. The URL will be stored securely in SharedPreferences.
 6. Connect an Android emulator or a physical Android smartphone with USB Debugging enabled.
 7. Click the **Run** button (Green Play Icon) in Android Studio to build, install, and execute the app on your device!
 

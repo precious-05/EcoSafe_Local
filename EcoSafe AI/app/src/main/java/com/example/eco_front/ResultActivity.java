@@ -59,7 +59,6 @@ public class ResultActivity extends AppCompatActivity implements OnMapReadyCallb
 
     private static final String TAG = "ResultActivity";
     private static final int LOCATION_PERMISSION_REQUEST = 1002;
-    private static final String BASE_URL = "http://192.168.233.56:8000/";
 
     // UI Elements
     private ImageView ivResultIcon, ivCapturedImage, ivBackBtn, ivConfidenceIcon;
@@ -545,8 +544,9 @@ public class ResultActivity extends AppCompatActivity implements OnMapReadyCallb
                         jsonBody.toString()
                 );
 
+                String dynamicBaseUrl = AppConfig.getBaseUrl(ResultActivity.this);
                 Request request = new Request.Builder()
-                        .url(BASE_URL + "incidents")
+                        .url(dynamicBaseUrl + "incidents")
                         .post(body)
                         .addHeader("Content-Type", "application/json")
                         .build();

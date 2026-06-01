@@ -72,11 +72,10 @@ import retrofit2.http.Part;
 public class HomeActivity extends AppCompatActivity {
 
     private static final String TAG = "HomeActivity";
-    private static final String BASE_URL = "http://192.168.106.56:8000/";
     private static final int PICK_IMAGE_REQUEST = 1001;
 
     private PreviewView previewView;
-    private ImageView ivImagePreview;
+    private ImageView ivImagePreview, ivSettings;
     private CardView cameraCardView, imagePreviewCard;
     private ImageCapture imageCapture;
     private ListenableFuture<ProcessCameraProvider> cameraProviderFuture;
@@ -190,6 +189,7 @@ public class HomeActivity extends AppCompatActivity {
     private void initViews() {
         previewView = findViewById(R.id.previewView);
         ivImagePreview = findViewById(R.id.iv_image_preview);
+        ivSettings = findViewById(R.id.iv_settings);
         cameraCardView = findViewById(R.id.camera_card_view);
         imagePreviewCard = findViewById(R.id.image_preview_card);
         btnCapture = findViewById(R.id.btn_capture);
@@ -218,8 +218,9 @@ public class HomeActivity extends AppCompatActivity {
                 .writeTimeout(30, TimeUnit.SECONDS)
                 .build();
 
+        String dynamicBaseUrl = AppConfig.getBaseUrl(this);
         Retrofit retrofit = new Retrofit.Builder()
-                .baseUrl(BASE_URL)
+                .baseUrl(dynamicBaseUrl)
                 .client(client)
                 .addConverterFactory(GsonConverterFactory.create())
                 .build();
@@ -309,6 +310,10 @@ public class HomeActivity extends AppCompatActivity {
             btnSwitchCamera.setOnClickListener(v -> switchCamera());
         }
 
+        if (ivSettings != null) {
+            ivSettings.setOnClickListener(v -> showSettingsDialog());
+        }
+
         navHome.setOnClickListener(v ->
                 Toast.makeText(this, "You are on the home screen", Toast.LENGTH_SHORT).show());
 
@@ -337,8 +342,52 @@ public class HomeActivity extends AppCompatActivity {
         // Apply premium springy touch interactive effects
         setupInteractiveTouchEffects(
                 btnCapture, btnGallery, btnSwitchCamera, btnDetect,
-                navHome, navHistory, navEmergency, navRisk, ivNotification
+                navHome, navHistory, navEmergency, navRisk, ivNotification, ivSettings
         );
+    }
+
+    private void showSettingsDialog() {
+        androidx.appcompat.app.AlertDialog.Builder builder = new androidx.appcompat.app.AlertDialog.Builder(this);
+        builder.setTitle("Configure Backend IP / URL");
+
+        LinearLayout container = new LinearLayout(this);
+        container.setOrientation(LinearLayout.VERTICAL);
+        int paddingDp = 20;
+        float density = getResources().getDisplayMetrics().density;
+        int paddingPx = (int) (paddingDp * density);
+        container.setPadding(paddingPx, paddingPx, paddingPx, paddingPx);
+
+        TextView label = new TextView(this);
+        label.setText("Enter Laptop IP address (e.g. 192.168.106.56:8000) or dynamic ngrok link:");
+        label.setTextColor(getColor(R.color.pastel_text_secondary));
+        label.setTextSize(13);
+        label.setPadding(0, 0, 0, (int) (8 * density));
+        container.addView(label);
+
+        final android.widget.EditText input = new android.widget.EditText(this);
+        input.setSingleLine(true);
+        input.setText(AppConfig.getBaseUrl(this));
+        input.setSelection(input.getText().length());
+        container.addView(input);
+
+        builder.setView(container);
+
+        builder.setPositiveButton("Save", (dialog, which) -> {
+            String newUrl = input.getText().toString().trim();
+            if (!newUrl.isEmpty()) {
+                AppConfig.setBaseUrl(HomeActivity.this, newUrl);
+                setupRetrofit();
+                checkBackendStatus();
+                Toast.makeText(HomeActivity.this, "✓ Backend URL updated!", Toast.LENGTH_SHORT).show();
+            } else {
+                Toast.makeText(HomeActivity.this, "URL cannot be empty", Toast.LENGTH_SHORT).show();
+            }
+        });
+
+        builder.setNegativeButton("Cancel", (dialog, which) -> dialog.cancel());
+
+        androidx.appcompat.app.AlertDialog dialog = builder.create();
+        dialog.show();
     }
 
     private void setupInteractiveTouchEffects(View... views) {
@@ -797,10 +846,11 @@ public class HomeActivity extends AppCompatActivity {
     }
 
     private void checkBackendStatus() {
+        String dynamicBaseUrl = AppConfig.getBaseUrl(this);
         tvStatusHint.setText("Backend: Connecting...");
         OkHttpClient client = new OkHttpClient();
         okhttp3.Request request = new okhttp3.Request.Builder()
-                .url(BASE_URL + "health")
+                .url(dynamicBaseUrl + "health")
                 .build();
 
         client.newCall(request).enqueue(new okhttp3.Callback() {

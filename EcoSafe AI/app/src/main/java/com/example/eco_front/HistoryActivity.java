@@ -45,7 +45,6 @@ import okhttp3.Response;
 public class HistoryActivity extends AppCompatActivity {
 
     private static final String TAG = "HistoryActivity";
-    private static final String BASE_URL = "http://192.168.106.56:8000/";
 
     private RecyclerView rvIncidents;
     private IncidentAdapter incidentAdapter;
@@ -138,8 +137,9 @@ public class HistoryActivity extends AppCompatActivity {
                         .readTimeout(15, TimeUnit.SECONDS)
                         .build();
 
+                String dynamicBaseUrl = AppConfig.getBaseUrl(HistoryActivity.this);
                 Request request = new Request.Builder()
-                        .url(BASE_URL + "incidents?admin_key=EcoSafe_Admin_2024")
+                        .url(dynamicBaseUrl + "incidents?admin_key=EcoSafe_Admin_2024")
                         .delete()
                         .build();
 
@@ -416,8 +416,9 @@ public class HistoryActivity extends AppCompatActivity {
                         .readTimeout(15, TimeUnit.SECONDS)
                         .build();
 
+                String dynamicBaseUrl = AppConfig.getBaseUrl(HistoryActivity.this);
                 Request request = new Request.Builder()
-                        .url(BASE_URL + "incidents")
+                        .url(dynamicBaseUrl + "incidents")
                         .build();
 
                 try (Response response = client.newCall(request).execute()) {

@@ -12,6 +12,8 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.os.Environment;
+
 import java.io.File;
 import java.text.SimpleDateFormat;
 import java.util.List;
@@ -94,8 +96,21 @@ public class IncidentAdapter extends RecyclerView.Adapter<IncidentAdapter.ViewHo
     private void loadThumbnail(ImageView imageView, String imagePath) {
         if (imagePath != null && !imagePath.isEmpty()) {
             File imageFile = new File(imagePath);
+            if (!imageFile.exists() || !imageFile.isAbsolute()) {
+                String filename = imageFile.getName();
+                File cacheFile = new File(imageView.getContext().getCacheDir(), filename);
+                if (cacheFile.exists()) {
+                    imageFile = cacheFile;
+                } else {
+                    File picturesFile = new File(imageView.getContext().getExternalFilesDir(Environment.DIRECTORY_PICTURES), filename);
+                    if (picturesFile.exists()) {
+                        imageFile = picturesFile;
+                    }
+                }
+            }
+
             if (imageFile.exists()) {
-                Bitmap bitmap = BitmapFactory.decodeFile(imagePath);
+                Bitmap bitmap = BitmapFactory.decodeFile(imageFile.getAbsolutePath());
                 if (bitmap != null) {
                     imageView.setImageBitmap(bitmap);
                     return;

@@ -1,5 +1,6 @@
 package com.example.eco_front;
 
+import android.annotation.SuppressLint;
 import android.Manifest;
 import android.content.Intent;
 import android.content.pm.PackageManager;
@@ -71,7 +72,7 @@ import retrofit2.http.Part;
 public class HomeActivity extends AppCompatActivity {
 
     private static final String TAG = "HomeActivity";
-    private static final String BASE_URL = "http://192.168.233.56:8000/";
+    private static final String BASE_URL = "http://192.168.106.56:8000/";
     private static final int PICK_IMAGE_REQUEST = 1001;
 
     private PreviewView previewView;
@@ -516,6 +517,7 @@ public class HomeActivity extends AppCompatActivity {
                 == PackageManager.PERMISSION_GRANTED;
     }
 
+    @SuppressLint("MissingPermission")
     private void fetchLocationThenPredict(File imageFile) {
         if (!hasLocationPermission()) {
             detectionLatitude = 0.0;
@@ -543,6 +545,7 @@ public class HomeActivity extends AppCompatActivity {
                 });
     }
 
+    @SuppressLint("MissingPermission")
     private void tryLastKnownLocationForPredict(File imageFile) {
         fusedLocationClient.getLastLocation().addOnSuccessListener(location -> {
             if (location != null && isValidCoordinates(location.getLatitude(), location.getLongitude())) {
@@ -562,6 +565,7 @@ public class HomeActivity extends AppCompatActivity {
         return (lat != 0.0 || lon != 0.0) && lat >= -90 && lat <= 90 && lon >= -180 && lon <= 180;
     }
 
+    @SuppressLint("MissingPermission")
     private void requestFreshLocationForPredict(File imageFile) {
         LocationRequest locationRequest = LocationRequest.create()
                 .setPriority(LocationRequest.PRIORITY_HIGH_ACCURACY)
@@ -704,11 +708,13 @@ public class HomeActivity extends AppCompatActivity {
     }
 
     private File bitmapToFile(Bitmap bitmap) {
-        File file = new File(getCacheDir(), "temp_image.jpg");
-        try (FileOutputStream fos = new FileOutputStream(file)) {
-            bitmap.compress(Bitmap.CompressFormat.JPEG, 70, fos);
-            fos.flush();
-            return file;
+        try {
+            File file = File.createTempFile("gallery_", ".jpg", getCacheDir());
+            try (FileOutputStream fos = new FileOutputStream(file)) {
+                bitmap.compress(Bitmap.CompressFormat.JPEG, 70, fos);
+                fos.flush();
+                return file;
+            }
         } catch (IOException e) {
             return null;
         }

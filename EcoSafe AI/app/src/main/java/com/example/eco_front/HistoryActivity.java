@@ -45,7 +45,7 @@ import okhttp3.Response;
 public class HistoryActivity extends AppCompatActivity {
 
     private static final String TAG = "HistoryActivity";
-    private static final String BASE_URL = "http://192.168.233.56:8000/";
+    private static final String BASE_URL = "http://192.168.106.56:8000/";
 
     private RecyclerView rvIncidents;
     private IncidentAdapter incidentAdapter;

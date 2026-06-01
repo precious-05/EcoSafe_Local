@@ -30,13 +30,13 @@ EcoSafe AI addresses the critical problem of rapid wildfire escalation through e
 
 ## 📱 App Screenshots
 
-### 🚀 Onboarding & Permissions
+### Onboarding & Permissions
 
 | Splash Screen | Welcome Screen | Location Permission | Camera Permission |
 | :---: | :---: | :---: | :---: |
 | ![Splash Screen](screenshots/ss1.png) | ![Welcome Screen](screenshots/ss4.png) | ![Location Permission](screenshots/ss2.png) | ![Camera Permission](screenshots/ss3.png) |
 
-### 🔍 AI Fire Detection
+### AI Fire Detection
 
 | Detection | Detection Result | Detection Result | Detection Result | Detection Result |
 | :---: | :---: | :---: | :---: | :---: |

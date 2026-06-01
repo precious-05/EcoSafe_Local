@@ -1,4 +1,4 @@
-# 🌲 EcoSafe AI
+# EcoSafe AI
 > **Forest Fire Detection & Intelligent Risk Analysis System**
 
 EcoSafe AI is a state-of-the-art, full-stack application designed to detect forest fires in real-time using custom Machine Learning models and provide intelligent threat analysis. By combining a high-performance **FastAPI (Python)** backend running a specialized **TensorFlow Lite** model with a premium, interactive **Java Android mobile client**, EcoSafe AI empowers tourists, foresters, and environmentalists to scan forest terrains, identify fire outbreaks, analyze visual risk metrics, and report incidents instantly to emergency departments.
@@ -19,7 +19,7 @@ EcoSafe AI is a state-of-the-art, full-stack application designed to detect fore
 
 ---
 
-## 🔍 About the App
+## About the App
 EcoSafe AI addresses the critical problem of rapid wildfire escalation through early visual detection and automated geo-reporting. 
 * **What it is:** A comprehensive forest fire diagnostics and risk evaluation application powered by local TensorFlow Lite classification models.
 * **Who can use it:** Tourists, hikers, forest authorities, researchers, and local residents inhabiting regions vulnerable to forest fire hazards.
@@ -34,7 +34,7 @@ EcoSafe AI addresses the critical problem of rapid wildfire escalation through e
 
 | Splash Screen | Dashboard / Camera Scan | Risk Analysis | Forest Safety Guide | Emergency Portal |
 | :---: | :---: | :---: | :---: | :---: |
-| ![Splash](screenshots/splash_screen.png) | ![Dashboard](screenshots/dashboard.png) | ![Risk Analysis](screenshots/risk_analysis.png) | ![Forest Guide](screenshots/forest_guide.png) | ![Emergency Portal](screenshots/emergency_portal.png) |
+| ![Splash](screenshots/ss1.png) | ![Detection](screenshots/ss5.png) | ![Detection_Result](screenshots/ss15.png) | ![Risk Analysis](screenshots/risk_analysis.png) | ![Forest Guide](screenshots/forest_guide.png) | ![Emergency Portal](screenshots/ss24.png) |
 
 ---
 

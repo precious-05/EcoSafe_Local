@@ -30,16 +30,41 @@ EcoSafe AI addresses the critical problem of rapid wildfire escalation through e
 
 ## 📱 App Screenshots
 
-| Splash Screen | Welcome Screen | Location Permission | Camera Permission | Detection |
-| :---: | :---: | :---: | :---: | :---: |
-| ![Splash Screen](screenshots/ss1.png) | ![Welcome Screen](screenshots/ss4.png) | ![Location Permission](screenshots/ss2.png) | ![Camera Permission](screenshots/ss3.png) | ![Detection](screenshots/ss8.png) |
+### 🚀 Onboarding & Permissions
 
-| Detection Result & Location Fetch | Incident Details | Risk Analysis & Dashboard | Emergency Portal | Forest Information |
+| Splash Screen | Welcome Screen | Location Permission | Camera Permission |
+| :---: | :---: | :---: | :---: |
+| ![Splash Screen](screenshots/ss1.png) | ![Welcome Screen](screenshots/ss4.png) | ![Location Permission](screenshots/ss2.png) | ![Camera Permission](screenshots/ss3.png) |
+
+### 🔍 AI Fire Detection
+
+| Detection | Detection Result | Detection Result | Detection Result | Detection Result |
 | :---: | :---: | :---: | :---: | :---: |
-| ![Detection Result](screenshots/ss10.png) | ![Incident Details](screenshots/ss12.png) | ![Risk Analysis](screenshots/ss19.png) | ![Emergency Portal](screenshots/ss20.png) | ![Forest Information](screenshots/ss22.png) |
-| ![Detection Result](screenshots/ss11.png) | ![Incident Details](screenshots/ss16.png) | ![Dashboard](screenshots/ss21.png) |  | ![Forest Information](screenshots/ss23.png) |
-| ![Detection Result](screenshots/ss15.png) |  | ![Risk Analysis](screenshots/ss24.png) |  | ![Forest Information](screenshots/ss25.png) |
-| ![Detection Result](screenshots/ss18.png) |  |  |  |  |
+| ![Detection](screenshots/ss8.png) | ![Detection Result](screenshots/ss10.png) | ![Detection Result](screenshots/ss11.png) | ![Detection Result](screenshots/ss15.png) | ![Detection Result](screenshots/ss18.png) |
+
+### Incident Monitoring
+
+| Incident Details | Incident Details |
+| :---: | :---: |
+| ![Incident Details](screenshots/ss12.png) | ![Incident Details](screenshots/ss16.png) |
+
+### Risk Analysis & Dashboard
+
+| Risk Analysis | Dashboard | Risk Analysis |
+| :---: | :---: | :---: |
+| ![Risk Analysis](screenshots/ss19.png) | ![Dashboard](screenshots/ss21.png) | ![Risk Analysis](screenshots/ss24.png) |
+
+### Emergency Response
+
+| Emergency Portal |
+| :---: |
+| ![Emergency Portal](screenshots/ss20.png) |
+
+### Forest Intelligence
+
+| High-Risk Forests | Medium-Risk Forests | Forest Information |
+| :---: | :---: | :---: |
+| ![Forest Information](screenshots/ss22.png) | ![Forest Information](screenshots/ss23.png) | ![Forest Information](screenshots/ss25.png) |
 
 ## Key Features
 

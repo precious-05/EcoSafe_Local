@@ -58,7 +58,7 @@ EcoSafe AI addresses the critical problem of rapid wildfire escalation through e
 
 | Emergency Portal |
 | :---: |
-| <img src="screenshots/ss20.png" width="250" height="100"/> |
+| <img src="screenshots/ss20.png" width="250" height="250"/> |
 
 ### Forest Intelligence
 

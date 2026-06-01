@@ -58,7 +58,7 @@ EcoSafe AI addresses the critical problem of rapid wildfire escalation through e
 
 | Emergency Portal |
 | :---: |
-| ![Emergency Portal](screenshots/ss20.png) |
+| <img src="screenshots/ss20.png" width="250" height="100"/> |
 
 ### Forest Intelligence
 
@@ -96,7 +96,7 @@ EcoSafe AI addresses the critical problem of rapid wildfire escalation through e
 * **Hotline Dispatcher:** Speed-dial buttons to instantly call national emergency response teams (Rescue 1122, Police 15, Forest Department 1084).
 * **Telemetry Sharing:** Single-click utility to copy current precise GPS coordinates (Latitude & Longitude) or share a direct Google Maps location URL via messaging/social apps.
 
-### 💾 6. Offline-First & Automatic Cloud Sync
+###  6. Offline-First & Automatic Cloud Sync
 * **Local Database Store:** Logs all diagnostics to a local SQLite database (`incidents.db`) to ensure the app is fully functional in remote forest regions without internet connectivity.
 * **Dynamic Synchronizer:** Connects to the FastAPI backend to synchronize local data with the cloud server's database (`forest_fire.db`), ensuring records are unified across channels once internet access is restored.
 * **Interactive Logs Management:** Swipe-to-delete gestures to dismiss records individually, filter logs by timeframe (7 Days, 30 Days, All), search by coordinate ranges, or perform secure local/cloud database clearing (admin authenticated).

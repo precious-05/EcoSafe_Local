@@ -30,16 +30,16 @@ EcoSafe AI addresses the critical problem of rapid wildfire escalation through e
 
 ## 📱 App Screenshots
 
-
-| Splash Screen | Dashboard / Camera Scan | Risk Analysis | Forest Safety Guide | Emergency Portal |
+| Splash Screen | Welcome Screen | Location Permission | Camera Permission | Detection |
 | :---: | :---: | :---: | :---: | :---: |
-| ![Splash](screenshots/ss1.png) | ![Detection](screenshots/ss2.png) | ![Detection_Result](screenshots/ss3.png) | ![Risk Analysis](screenshots/ss4.png) | ![Forest Guide](screenshots/ss5.png) | ![Emergency Portal](screenshots/ss6.png) |
-|---|---|---|---|---|---|
-| ![Screen 7](screenshots/ss7.png) | ![Screen 8](screenshots/ss8.png) | ![Screen 9](screenshots/ss9.png) | ![Screen 10](screenshots/ss10.png) | ![Screen 11](screenshots/ss11.png) | ![Screen 12](screenshots/ss12.png) |
-| ![Screen 13](screenshots/ss13.png) | ![Screen 14](screenshots/ss14.png) | ![Screen 15](screenshots/ss15.png) | ![Screen 16](screenshots/ss16.png) | ![Screen 17](screenshots/ss17.png) | ![Screen 18](screenshots/ss18.png) |
-| ![Screen 19](screenshots/ss19.png) | ![Screen 20](screenshots/ss20.png) | ![Screen 21](screenshots/ss21.png) | ![Screen 22](screenshots/ss22.png) | ![Screen 23](screenshots/ss23.png) | ![Screen 24](screenshots/ss24.png) |
-| ![Screen 25](screenshots/ss25.png) |
----
+| ![Splash Screen](screenshots/ss1.png) | ![Welcome Screen](screenshots/ss4.png) | ![Location Permission](screenshots/ss2.png) | ![Camera Permission](screenshots/ss3.png) | ![Detection](screenshots/ss8.png) |
+
+| Detection Result & Location Fetch | Incident Details | Risk Analysis & Dashboard | Emergency Portal | Forest Information |
+| :---: | :---: | :---: | :---: | :---: |
+| ![Detection Result](screenshots/ss10.png) | ![Incident Details](screenshots/ss12.png) | ![Risk Analysis](screenshots/ss19.png) | ![Emergency Portal](screenshots/ss20.png) | ![Forest Information](screenshots/ss22.png) |
+| ![Detection Result](screenshots/ss11.png) | ![Incident Details](screenshots/ss16.png) | ![Dashboard](screenshots/ss21.png) |  | ![Forest Information](screenshots/ss23.png) |
+| ![Detection Result](screenshots/ss15.png) |  | ![Risk Analysis](screenshots/ss24.png) |  | ![Forest Information](screenshots/ss25.png) |
+| ![Detection Result](screenshots/ss18.png) |  |  |  |  |
 
 ## Key Features
 

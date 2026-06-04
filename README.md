@@ -16,7 +16,7 @@
 
 ---
 
-EcoSafe AI is a state-of-the-art, full-stack application designed to detect forest fires in real-time using custom Machine Learning models and provide intelligent threat analysis. By combining a high-performance **FastAPI (Python)** backend running a specialized **TensorFlow Lite** model with a premium, interactive **Java Android mobile client**, EcoSafe AI empowers tourists, foresters, and environmentalists to scan forest terrains, identify fire outbreaks, analyze visual risk metrics, and report incidents instantly to emergency departments.
+EcoSafe AI is a state-of-the-art, full-stack application designed to detect forest fires in real-time using custom Machine Learning models & provide intelligent threat analysis. By combining a high-performance **FastAPI (Python)** backend running a specialized **TensorFlow Lite** model with a premium, interactive **Java Android mobile client**, EcoSafe AI empowers tourists, foresters, and environmentalists to scan forest terrains, identify fire outbreaks, analyze visual risk metrics, and report incidents instantly to emergency departments.
 
 ---
 

@@ -1,4 +1,4 @@
-```markdown
+
 # EcoSafe AI
 > **Forest Fire Detection & Intelligent Risk Analysis System**
 
@@ -227,4 +227,4 @@ View our official, host-published privacy policy:
 ---
 
 *EcoSafe AI - Protecting our forests, preserving our future*
-```
+

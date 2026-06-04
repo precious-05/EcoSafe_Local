@@ -128,7 +128,7 @@ EcoSafe AI addresses the critical problem of rapid wildfire escalation through e
 
 ### Android Mobile Client (Frontend)
 
-| Technology | Badge |
+| Technology |       |
 |:-----------|:------|
 | **Language:** Java | [![Java](https://img.shields.io/badge/Java-Android-3DDC84?style=flat-square&logo=android&logoColor=white)](https://developer.android.com/) |
 | **IDE:** Android Studio | [![Android Studio](https://img.shields.io/badge/Android_Studio-3DDC84?style=flat-square&logo=android-studio&logoColor=white)](https://developer.android.com/studio) |
@@ -141,7 +141,7 @@ EcoSafe AI addresses the critical problem of rapid wildfire escalation through e
 
 ### FastAPI Services (Backend)
 
-| Technology | Badge |
+| Technology |       |
 |:-----------|:------|
 | **Language:** Python | [![Python](https://img.shields.io/badge/Python-3.9+-3776AB?style=flat-square&logo=python&logoColor=white)](https://www.python.org/) |
 | **Framework:** FastAPI | [![FastAPI](https://img.shields.io/badge/FastAPI-0.95+-009688?style=flat-square&logo=fastapi&logoColor=white)](https://fastapi.tiangolo.com/) |

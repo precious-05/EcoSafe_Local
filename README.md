@@ -258,4 +258,3 @@ EcoSafe AI values user privacy. The application accesses device location and cam
 </div>
 
 
-**Summary:** Font-awesome GitHub mein kaam nahi karta. Isliye maine **badges (shields.io)** use kiye hain - ye professional lagte hain aur har jagah render hote hain. Content 100% same hai, sirf icons replace kiye hain.
